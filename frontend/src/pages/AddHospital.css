@@ -1,0 +1,56 @@
+.add-hospital-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.add-hospital-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.add-hospital-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-hospital-form label {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+.add-hospital-form input {
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.add-hospital-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.add-hospital-form button {
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.add-hospital-form button:hover {
+    background-color: #0056b3;
+}

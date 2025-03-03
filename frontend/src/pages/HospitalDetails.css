@@ -1,0 +1,72 @@
+.hospital-details {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+
+.hospital-name {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.main-image {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+.details {
+  font-size: 30px;
+  text-align: left;
+  margin: 12px 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hospital-images h2 {
+  font-size: 30px;
+  margin-top: 25px;
+}
+
+.image-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.back-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 25px;
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}

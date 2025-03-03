@@ -1,0 +1,62 @@
+.hospital-details-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .hospital-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .hospital-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .hospital-info p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .book-appointment-btn {
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .book-appointment-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .back-btn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-btn:hover {
+    background-color: #d93636;
+  }
+  
