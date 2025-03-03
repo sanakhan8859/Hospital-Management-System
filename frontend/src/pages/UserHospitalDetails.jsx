@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import "./UserHospitalDetails.css";
+import "./UserHospitalDetails.css"; 
 
 const UserHospitalDetails = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const hospital = location.state;
+
+  const [showPopup, setShowPopup] = useState(false); 
 
   if (!hospital) {
     return <p className="error-message">No hospital details available.</p>;
@@ -25,7 +28,6 @@ const UserHospitalDetails = () => {
         <p><strong>Departments:</strong> {hospital.numberOfDepartments || "N/A"}</p>
         <p><strong>Description:</strong> {hospital.description || "No description available."}</p>
 
-      
         {hospital.images?.length > 0 && (
           <div className="hospital-images">
             <h3>Additional Images</h3>
@@ -38,7 +40,20 @@ const UserHospitalDetails = () => {
         )}
       </div>
 
-      <button className="book-appointment-btn">Book Appointment</button>
+
+      <button className="book-appointment-btn" onClick={() => setShowPopup(true)}>
+        Book Appointment
+      </button>
+
+      
+      {showPopup && (
+        <div className="popup-overlay">
+          <div className="popup">
+            <p className="popup-message">⚠️ No slots are available at the moment.</p>
+            <button className="close-btn" onClick={() => setShowPopup(false)}>Close</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

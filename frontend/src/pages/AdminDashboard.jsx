@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "./AdminDashboard.css"; // Import CSS file
+import "./AdminDashboard.css"; 
+
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 
@@ -29,6 +30,7 @@ const AdminDashboard = () => {
       await axios.delete(`${BASE_URL}/hospitals/delete?id=${id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       });
+      
       alert("Hospital deleted successfully!");
       fetchHospitals();
     } catch (error) {

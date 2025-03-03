@@ -1,148 +1,145 @@
 
+
 .container-registration {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    background-color: #f4f4f4; 
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   
+}
 
-  .register-container {
-    width: 350px;
-    padding: 20px;
-    text-align: center;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.5s ease-in-out;
-  }
-  
- 
-  h2 {
-    margin-bottom: 1rem;
-    color: #333;
-    font-size: 22px;
-  }
+.register-container {
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
 
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  input {
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-  }
-  
-  input:focus {
-    border-color: #007bff;
-    outline: none;
-    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
-  }
-  
+h2 {
+  margin-bottom: 1rem;
+  color: #000000; 
+  font-size: 22px;
+}
 
-  .toggle-switch {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0;
-  }
-  
-  .toggle-switch label {
-    margin: 0 10px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .toggle-switch div {
-    display: inline-block;
-    width: 50px;
-    height: 25px;
-    background: #ccc;
-    border-radius: 25px;
-    position: relative;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .toggle-switch div::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 20px;
-    height: 20px;
-    background: white;
-    border-radius: 50%;
-    transition: left 0.3s;
-  }
-  
-  .toggle-switch div.active {
-    background: #4CAF50;
-  }
-  
-  .toggle-switch div.active::before {
-    left: 26px;
-  }
-  
+form {
+  display: flex;
+  flex-direction: column;
+}
 
-  button {
-    background-color: #007bff;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 15px;
-    transition: background 0.3s ease-in-out;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+input {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
 
-  .error-message {
-    color: red;
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
+input:focus {
+  border-color: #000000; 
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
 
-  p {
-    margin-top: 15px;
-    font-size: 14px;
-    color: #555;
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.toggle-switch label {
+  margin: 0 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.toggle-switch div {
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  background: #ccc;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toggle-switch div::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  transition: left 0.3s;
+}
+
+.toggle-switch div.active {
+  background: #009688;
+}
+
+.toggle-switch div.active::before {
+  left: 26px;
+}
+
+
+button {
+  background-color: #798583; 
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #949ba5; 
+}
+
+
+.error-message {
+  color: #e53935; 
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-link {
+  color: #3f4de5;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.login-link:hover {
+  color: #858bd5;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  .login-link {
-    color: #007bff;
-    cursor: pointer;
-    text-decoration: underline;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .login-link:hover {
-    color: #0056b3;
-  }
-  
- 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+}

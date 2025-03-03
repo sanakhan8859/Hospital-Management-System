@@ -24,7 +24,7 @@ const AddHospital = () => {
     setHospital({ ...hospital, [e.target.name]: e.target.value });
   };
 
-  // Add a new hospital
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -33,7 +33,7 @@ const AddHospital = () => {
       });
 
       alert("Hospital added successfully!");
-      navigate("/admin-dashboard"); // Redirect to admin dashboard after adding
+      navigate("/admin-dashboard"); 
     } catch (error) {
       console.error("Error adding hospital", error);
       alert("Failed to add hospital.");

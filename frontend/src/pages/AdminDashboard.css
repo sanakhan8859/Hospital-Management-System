@@ -2,22 +2,20 @@
   max-width: 1200px;
   margin: auto;
   padding: 20px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+}
 
 .admin-top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background: #007bff;
-  color: white;
+  background: #424242; 
+  color: #f0f0f0; 
   border-radius: 8px;
 }
-
 
 .welcome-message {
   font-size: 18px;
@@ -25,18 +23,17 @@
   text-align: center;
   margin: 20px 0;
   font-weight: bold;
-  background: #f1f1f1;
+  background: #d5d5d5; 
   padding: 12px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 
-/* Logout Button */
 .logout-btn {
   padding: 10px 16px;
-  background: #dc3545;
-  color: white;
+  background: #616161; 
+  color: #f0f0f0; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -45,14 +42,14 @@
 }
 
 .logout-btn:hover {
-  background: #b02a37;
+  background: #424242; 
   transform: scale(1.05);
 }
 
-/* Welcome Message */
+
 p {
   font-size: 16px;
-  color: #444;
+  color: #555; 
   text-align: center;
   margin: 10px 0;
 }
@@ -65,8 +62,8 @@ p {
 
 .admin-buttons button {
   padding: 12px 18px;
-  background: #28a745;
-  color: white;
+  background: #3338a3; 
+  color: #f0f0f0; 
   font-size: 16px;
   border: none;
   border-radius: 8px;
@@ -76,10 +73,9 @@ p {
 }
 
 .admin-buttons button:hover {
-  background: #218838;
+  background: #7989c5; 
   transform: scale(1.05);
 }
-
 
 .hospital-list {
   display: grid;
@@ -89,17 +85,17 @@ p {
 }
 
 .hospital-card {
-  background: white;
+  background: #f5f5f5; 
   border-radius: 10px;
   padding: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hospital-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .hospital-image {
@@ -121,7 +117,6 @@ p {
   margin: 5px 0;
 }
 
-
 .hospital-actions {
   margin-top: 10px;
   display: flex;
@@ -139,28 +134,26 @@ p {
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-/* Edit Button */
+
 .hospital-actions button:first-child {
-  background: #007bff;
-  color: white;
+  background: #40cf53; 
+  color: #f0f0f0;
 }
 
 .hospital-actions button:first-child:hover {
-  background: #0056b3;
+  background: #37474f; 
   transform: scale(1.05);
 }
 
-
 .delete-btn {
-  background: #dc3545;
-  color: white;
+  background: #d30a0a; 
+  color: #f0f0f0;
 }
 
 .delete-btn:hover {
-  background: #b02a37;
+  background: #5788a0; 
   transform: scale(1.05);
 }
-
 
 .hospital-list p {
   text-align: center;
@@ -168,7 +161,6 @@ p {
   font-weight: bold;
   color: #777;
 }
-
 
 @media (max-width: 768px) {
   .admin-dashboard {
